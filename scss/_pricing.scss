@@ -1,0 +1,134 @@
+.pricing {
+  .container {
+    max-width: 1200px;
+    padding: 100px 16px 0;
+
+    .row:first-child {
+      margin: 0 0 16px 0;
+    }
+  }
+
+  &__box {
+    padding: 2rem 0;
+    border: none;
+    background-color: #fff;
+    box-shadow: 0 5px 20px 0 #666;
+    text-align: center;
+    line-height: 200%;
+    border-radius: 4px;
+    transition: 0.2s;
+    margin-bottom: 32px;
+
+    &__plan-name {
+      background-color: #f6f6f6;
+      box-shadow: -4px 0 0 $c-green, 4px 0 0 0 $c-green;
+      font-family: "Poppins", sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 40px;
+      transition: 0.2s;
+    }
+
+    &__order {
+      color: #000;
+      text-transform: uppercase;
+      font-family: "Poppins", sans-serif;
+      font-size: 0.875rem;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    h3 {
+      font-size: 2.5rem;
+      margin-bottom: 0;
+    }
+
+    p {
+      padding: 0 2rem;
+      font-size: 0.875rem;
+    }
+
+    &:focus,
+    &:focus-visible {
+      box-shadow: 0 10px 40px 0 #000;
+      outline: none;
+    }
+  }
+
+  &__wave {
+    z-index: -1;
+
+    svg {
+      width: 1600px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .pricing {
+    .container {
+      padding: 160px 16px 0;
+
+      .row:first-child {
+        margin: 0 0 36px 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .pricing {
+    &__box {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .pricing {
+    &__box {
+      &:hover,
+      &:focus {
+        box-shadow: 0 10px 40px 0 #000;
+        .pricing__box {
+          &__plan-name {
+            background-color: $c-green;
+            box-shadow: 0 0 0 $c-green, 0 0 0 0 $c-green;
+            color: #fff;
+          }
+
+          &__order {
+            color: $c-green;
+
+            span {
+              border-bottom: 1px solid $c-green;
+            }
+          }
+        }
+      }
+
+      &:active {
+        box-shadow: 0 5px 20px 0 #666;
+      }
+    }
+  }
+}
+
+@media (min-width: 1500px) {
+  .pricing {
+    &__wave {
+      svg {
+        width: 100%;
+      }
+    }
+
+    .container {
+      padding: 130px 16px 0;
+    }
+
+    &__box {
+      padding: 30px 0;
+      margin-bottom: 90px;
+    }
+  }
+}

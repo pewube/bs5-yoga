@@ -1,0 +1,79 @@
+.register {
+  &--1 {
+    padding: 50px 0 0;
+    background-image: url(/img/register1-wave.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h3 {
+      text-shadow: -1px 0 2px $c-green, 1px 0 2px $c-green, 0 -1px 2px $c-green,
+        0 1px 2px $c-green;
+    }
+
+    p {
+      text-shadow: -1px 0 2px $c-green, 1px 0 2px $c-green, 0 -1px 2px $c-green,
+        0 1px 2px $c-green;
+    }
+  }
+
+  &--2 {
+    padding: 16px 0 0;
+    background-color: $c-green;
+  }
+
+  .container {
+    max-width: 1200px;
+    padding: 0 16px 16px;
+  }
+
+  &__btn {
+    @include register-button($c-green, #fff);
+  }
+
+  h3 {
+    font-size: 1.875rem;
+    font-family: "PT Serif", serif;
+    color: #fff;
+  }
+
+  p {
+    font-size: 0.875rem;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+  }
+}
+
+@media (min-width: 768px) {
+  .register {
+    &--1 {
+      padding: 50px 0 0;
+    }
+    &--2 {
+      padding: 50px 0 0;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .register {
+    &__arrow {
+      svg {
+        width: 170px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .register {
+    &--1 {
+      height: 295px;
+    }
+
+    &__arrow {
+      svg {
+        width: 170px;
+      }
+    }
+  }
+}
