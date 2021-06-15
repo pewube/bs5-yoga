@@ -14,7 +14,7 @@
   }
 
   a {
-    padding: 1rem 0.4rem 0.5rem;
+    padding: 16px 6px 8px;
     transition: 0.2s;
 
     &:focus-visible {
@@ -48,8 +48,7 @@
 
     a {
       padding: 0;
-      margin: 0 0 0 2rem;
-      transition: 0.2s;
+      margin: 0 0 0 16px;
 
       &:hover,
       &:focus {

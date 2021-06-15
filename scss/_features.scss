@@ -20,8 +20,8 @@
 
   &__img01 {
     width: 100%;
-    max-width: 500px;
-    margin: -1rem auto 0;
+    max-width: 450px;
+    margin: -16px auto 0;
   }
 }
 
@@ -32,12 +32,11 @@
     }
 
     &__list {
-      margin-top: 2rem;
+      margin-top: 32px;
     }
 
     &__img01 {
       width: auto;
-      max-width: 450px;
       margin: 0 auto;
     }
   }
