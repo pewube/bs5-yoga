@@ -13,3 +13,11 @@
 body {
   position: relative;
 }
+
+img {
+  transition: 1s;
+
+  &.hide {
+    opacity: 0;
+  }
+}
